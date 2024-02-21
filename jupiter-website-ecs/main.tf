@@ -1,8 +1,7 @@
 # Configure AWS Provider
 provider "aws" {
     region  = var.region
-    profile = "LOVE9573"
-}
+  }
 
 # Create VPC
 module "vpc" {
