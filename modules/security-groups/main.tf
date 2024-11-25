@@ -2,7 +2,7 @@
 resource "aws_security_group" "alb_security_group" {
     name        = "ALB Security Group"
   description   = "Enable HTTP/HTTPS access on Port 80/443"
-  vpc_id        = aws_vpc.vpc.id
+  vpc_id        = var.vpc_id
 
   ingress {
     description = "HTTP Access"
